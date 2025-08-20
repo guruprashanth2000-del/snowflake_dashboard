@@ -30,7 +30,7 @@ FROM
 where
     event_timestamp > current_date -90;-- 
 
-    -----------------VW_USER_CREDITS
+    -----------------VW_SNOW_DORMANT_USER
 
     CREATE VIEW VW_SNOW_DORMANT_USER
     AS
@@ -139,8 +139,6 @@ order by child.id;
 -----------------VW_ROLE_METRICS
 
  CREATE VIEW VW_ROLE_METRICS AS 
-
- 
 
 WITH RoleHierarchy AS (
 
