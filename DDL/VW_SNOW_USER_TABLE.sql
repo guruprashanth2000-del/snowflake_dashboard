@@ -15,8 +15,5 @@ WHERE
     DELETED_ON IS NULL;
 
 
-    git config --global user.name "guruprashanth2000-del"
- 
-git config --global user.email guruprashanth2000@gmail.com
- 
+    
  
