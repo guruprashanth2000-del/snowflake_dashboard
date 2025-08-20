@@ -460,4 +460,6 @@ ORDER BY
 
     ROLE_WITH_DIRECT_PRIVILEGE, DATABASE_NAME, SCHEMA_NAME, PRIVILEGE_CATEGORY;
 
- 
+ create view vw_snow_user_role_rel as 
+ select distinct GRANTEE_NAME as user_name,ROLE as role_name from SNOWFLAKE.ACCOUNT_USAGE.GRANTS_TO_USERS order 
+ by grantee_name  
